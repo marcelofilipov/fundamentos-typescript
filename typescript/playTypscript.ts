@@ -1,4 +1,4 @@
-function runTS(name) {
+function runTS(name: string): string {
   return "Javascript: Hello " + name;
 }
 
