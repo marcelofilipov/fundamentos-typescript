@@ -1,6 +1,9 @@
 {
     "compilerOptions": {
-        //"noImplicitAny": true,
-        //"strictNullChecks": true
+        "moduleDetection": "force",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "strictNullChecks": true,
+        "target": "ES6"
     }
 }
