@@ -10,3 +10,5 @@ const argString: string = "value";
 const value = identity(argString);
 
 const value2 = identity<number>(4);
+
+const value3 = identity(10);
