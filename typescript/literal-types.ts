@@ -37,3 +37,5 @@ const req: { url: string; method: METHOD } = {
 };
 
 req.method = "POST";
+
+handleRequest(req.url, req.method);
