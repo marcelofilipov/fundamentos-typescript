@@ -4,6 +4,9 @@
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "strictNullChecks": true,
-        "target": "ES6"
+        "target": "ES6",
+        "module": "CommonJS",
+        "outDir": "out",
+        "sourceMap": true
     }
 }
