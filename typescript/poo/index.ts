@@ -1,14 +1,21 @@
+import { BankAccount } from "./banking/BankAccount";
 import { Person } from "./banking/Person";
+import { CurrentAccount, SavingsAccount } from "./banking/SavingsAccount";
 
-function main() {
-  const maria = new Person("Maria", "da Silva", new Date("1999-01-15"));
+const maria = new Person("Maria", "da Silva", new Date("1999-01-15"));
 
-  // maria.firstName;
+// maria.firstName;
+// const mariaAccount = new BankAccount(maria, 100, "123");
+const mariaAccount = new SavingsAccount(maria, 100, "123", 2);
 
-  // maria.firstName = "Maria da Silva";
-  maria.firstName = "";
+mariaAccount.deposit(200);
 
-  console.log(maria.firstName); // Output: "Maria da Silva"
+mariaAccount.withdraw(180);
+
+console.log(mariaAccount.accountDetails);
+
+function transaction(account: BankAccount) {
+  // exemplo
 }
 
-main();
+transaction(mariaAccount);
